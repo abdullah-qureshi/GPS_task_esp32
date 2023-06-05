@@ -1,0 +1,132 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-917-g37d11ea04d-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Jun  5 2023 14:11:10[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a5a0h ( 42400) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001a5c8 vaddr=3ffb0000 size=02148h (  8520) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001c718 vaddr=40080000 size=03900h ( 14592) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16604h ( 91652) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=0003662c vaddr=40083900 size=093a0h ( 37792) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (193) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (204) cpu_start: Starting app cpu, entry point is 0x40081104[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     GPS_task[0m
+[0;32mI (232) cpu_start: App version:      619d424-dirty[0m
+[0;32mI (238) cpu_start: Compile time:     Jun  5 2023 14:11:02[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  f359ca8eb...[0m
+[0;32mI (249) cpu_start: ESP-IDF:          v5.2-dev-917-g37d11ea04d-dirty[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (261) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (266) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (278) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (284) heap_init: At 3FFB29B8 len 0002D648 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (303) heap_init: At 4008CCA0 len 00013360 (76 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (336) app_start: Starting scheduler on CPU1[0m
+[0;32mI (336) main_task: Started on CPU0[0m
+[0;32mI (346) main_task: Calling app_main()[0m
+[0;32mI (346) main_task: Returned from app_main()[0m
+
+Extracted GPGGA string: $GPGGA,111528.00,3334.76055,N,07303.59747,E,2,10,1.14,509.3,M,-40.6,M,,0000*7D
+$GPGSA,A,3,16,18,32,27,10,29,26,13,15,23,,,2.02,1.14,1.67*05
+$GPGSV,4,1,13,05,01,062,,10,37,266,27,13,18,041,15,15,46,054,28*7B
+$GPGSV,4,2,13,16,12,283,21,18,68,019,20,23,64,309,31,24,16,120,*77
+$GPGSV,4,3,13,26,07,252,23,27,19,318,31,29,32,165,14,32,08,203,34*7C
+$GPGSV,4,4,13,40,46,210,36*4B
+$GPGLL,3334.76055,N,07303.59747,E,111528.00,A,D*6B
+$GPRMC,111529.00,A,3334.76058,N,07303.59741,E,0.313,,050623,,,D*7B
+$GPVTG,,T,,M,0.313,N,0.579,K,D*2C
+$GPGGA,111529.00,3334.76058,N,07303.59741,E,2,10,1.14,509.2,M,-40.6,M,,0000*76
+$GPGSA,A,3,16,18,32,27,10,29,26,13,15,23,,,2.02,1.14,1.67*05
+$GPGSV,4,1,13,05,01,062,,10,37,266,27,13,18,041,16,15,46,054,28*78
+$GPGSV,4,2,13,16,12,283,21,18,68,019,21,23,64,309,31,24,16,120,*76
+$GPGSV,4,3,13,26,07,252,23,27,19,318,
+
+Extracted GPGGA string: $GPGGA,111530.00,3334.76056,N,07303.59726,E,2,10,1.14,509.1,M,-40.6,M,,0000*72
+$GPGSA,A,3,16,18,32,27,10,29,26,13,15,23,,,2.02,1.14,1.67*05
+$GPGSV,4,1,13,05,01,062,,10,37,266,27,13,17,041,15,15,46,054,28*74
+$GPGSV,4,2,13,16,12,283,21,18,68,019,20,23,64,309,31,24,16,120,*77
+$GPGSV,4,3,13,26,07,252,23,27,19,318,30,29,32,165,11,32,08,203,34*78
+$GPGSV,4,4,13,40,46,210,36*4B
+$GPGLL,3334.76056,N,07303.59726,E,111530.00,A,D*66
+$GPRMC,111531.00,A,3334.76062,N,07303.59693,E,0.802,,050623,,,D*7E
+$GPVTG,,T,,M,0.802,N,1.485,K,D*24
+$GPGGA,111531.00,3334.76062,N,07303.59693,E,2,10,1.14,509.1,M,-40.6,M,,0000*7B
+$GPGSA,A,3,16,18,32,27,10,29,26,13,15,23,,,2.02,1.14,1.67*05
+$GPGSV,4,1,13,05,01,062,,10,37,266,27,13,17,041,14,15,46,054,28*75
+$GPGSV,4,2,13,16,12,283,21,18,68,019,20,23,64,309,31,24,16,12
+
+Extracted GPGGA string: $GPGGA,111532.00,3334.76057,N,07303.59695,E,2,10,1.14,509.0,M,-40.6,M,,0000*79
+$GPGSA,A,3,16,18,32,27,10,29,26,13,15,23,,,2.02,1.14,1.67*05
+$GPGSV,4,1,13,05,01,062,,10,37,266,27,13,17,041,14,15,45,054,29*77
+$GPGSV,4,2,13,16,12,283,22,18,68,019,21,23,64,309,31,24,16,120,*75
+$GPGSV,4,3,13,26,07,252,22,27,19,318,31,29,32,165,12,32,08,203,34*7B
+$GPGSV,4,4,13,40,46,210,36*4B
+$GPGLL,3334.76057,N,07303.59695,E,111532.00,A,D*6C
+$GPRMC,111533.00,A,3334.76054,N,07303.59697,E,0.497,,050623,,,D*7D
+$GPVTG,,T,,M,0.497,N,0.920,K,D*27
+$GPGGA,111533.00,3334.76054,N,07303.59697,E,2,10,1.14,508.9,M,-40.6,M,,0000*71
+$GPGSA,A,3,16,18,32,27,10,29,26,13,15,23,,,2.02,1.14,1.67*05
+$GPGSV,4,1,13,05,01,062,,10,37,266,26,13,17,041,14,15,45,054,29*76
+$GPGSV,4,2,13,16,
+
+Extracted GPGGA string: $GPGGA,111534.00,3334.76051,N,07303.59682,E,2,09,1.28,508.9,M,-40.6,M,,0000*70
+$GPGSA,A,3,16,18,32,27,10,26,13,15,23,,,,2.10,1.28,1.67*02
+$GPGSV,4,1,13,05,01,062,,10,37,266,26,13,17,041,15,15,45,054,29*77
+$GPGSV,4,2,13,16,12,282,23,18,68,019,21,23,64,309,31,24,16,120,*75
+$GPGSV,4,3,13,26,07,252,22,27,19,318,31,29,32,165,09,32,08,203,34*71
+$GPGSV,4,4,13,40,46,210,36*4B
+$GPGLL,3334.76051,N,07303.59682,E,111534.00,A,D*6A
+$GPRMC,111535.00,A,3334.76047,N,07303.59664,E,0.339,,050623,,,D*76
+$GPVTG,,T,,M,0.339,N,0.628,K,D*23
+$GPGGA,111535.00,3334.76047,N,07303.59664,E,2,09,1.28,508.8,M,-40.6,M,,0000*7F
+$GPGSA,A,3,16,18,32,27,10,26,13,15,23,,,,2.10,1.28,1.67*02
+$GPGSV,4,1,13,05,01,062,,10,37,266,26,13,17,0
+
+Extracted GPGGA string: $GPGGA,111536.00,3334.76033,N,07303.59651,E,2,09,1.28,508.8,M,-40.6,M,,0000*79
+$GPGSA,A,3,16,18,32,27,10,26,13,15,23,,,,2.10,1.28,1.67*02
+$GPGSV,4,1,13,05,01,062,,10,37,266,26,13,17,041,15,15,45,054,28*76
+$GPGSV,4,2,13,16,12,282,24,18,68,020,21,23,64,309,31,24,16,120,*78
+$GPGSV,4,3,13,26,07,252,22,27,19,318,31,29,32,165,,32,08,203,34*78
+$GPGSV,4,4,13,40,46,210,36*4B
+$GPGLL,3334.76033,N,07303.59651,E,111536.00,A,D*62
+$GPRMC,111537.00,A,3334.76033,N,07303.59657,E,1.759,,050623,,,D*74
+$GPVTG,,T,,M,1.759,N,3.257,K,D*2F
+$GPGGA,111537.00,3334.76033,N,07303.59657,E,2,09,1.28,508.7,M,-40.6,M,,0000*71
+$GPGSA,A,3,16,18,32,27,10,26,13,15,23,,,,2.10,1.28,1.67*02
+$GPGSV,4,

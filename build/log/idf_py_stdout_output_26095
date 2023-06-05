@@ -1,0 +1,231 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-917-g37d11ea04d-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Jun  5 2023 14:11:10[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ac50h ( 44112) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001ac78 vaddr=3ffb0000 size=02148h (  8520) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001cdc8 vaddr=40080000 size=03250h ( 12880) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1fdc0h (130496) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=0003fde8 vaddr=40083250 size=09a50h ( 39504) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (220) cpu_start: Pro cpu up.[0m
+[0;32mI (220) cpu_start: Starting app cpu, entry point is 0x40081104[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (238) cpu_start: Pro cpu start user code[0m
+[0;32mI (238) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (238) cpu_start: Application information:[0m
+[0;32mI (242) cpu_start: Project name:     GPS_task[0m
+[0;32mI (248) cpu_start: App version:      619d424-dirty[0m
+[0;32mI (253) cpu_start: Compile time:     Jun  5 2023 14:11:02[0m
+[0;32mI (259) cpu_start: ELF file SHA256:  a6cdaebaf...[0m
+[0;32mI (264) cpu_start: ESP-IDF:          v5.2-dev-917-g37d11ea04d-dirty[0m
+[0;32mI (271) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (276) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (281) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (286) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (293) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFB29B8 len 0002D648 (181 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (311) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (318) heap_init: At 4008CCA0 len 00013360 (76 KiB): IRAM[0m
+[0;32mI (326) spi_flash: detected chip: generic[0m
+[0;32mI (329) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (346) app_start: Starting scheduler on CPU0[0m
+[0;32mI (351) app_start: Starting scheduler on CPU1[0m
+[0;32mI (351) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) main_task: Returned from app_main()[0m
+
+Extracted GPGGA string: $GPGGA,131200.00,3334.76750,N,07303.58951,E,1,08,1.08,508.6,M,-40.6,M,,*7B
+
+Lat: 33.347675 N
+Lon: 73.035896 E
+Alt: 508.600006 m
+Satellites: 8
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131202.00,3334.76748,N,07303.58952,E,1,07,1.08,508.7,M,-40.6,M,,*7D
+
+Lat: 33.347675 N
+Lon: 73.035896 E
+Alt: 508.700012 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131204.00,3334.76761,N,07303.58946,E,1,07,1.08,508.7,M,-40.6,M,,*75
+
+Lat: 33.347675 N
+Lon: 73.035896 E
+Alt: 508.700012 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131206.00,3334.76759,N,07303.58941,E,1,07,1.08,508.8,M,-40.6,M,,*74
+
+Lat: 33.347675 N
+Lon: 73.035896 E
+Alt: 508.799988 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131208.00,3334.76752,N,07303.58936,E,1,07,1.08,509.1,M,-40.6,M,,*79
+
+Lat: 33.347675 N
+Lon: 73.035896 E
+Alt: 509.100006 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131210.00,3334.76755,N,07303.58931,E,1,07,1.08,509.3,M,-40.6,M,,*72
+
+Lat: 33.347675 N
+Lon: 73.035896 E
+Alt: 509.299988 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131212.00,3334.76754,N,07303.58930,E,1,07,1.08,509.4,M,-40.6,M,,*77
+
+Lat: 33.347675 N
+Lon: 73.035896 E
+Alt: 509.399994 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131214.00,3334.76727,N,07303.58948,E,1,07,1.08,509.1,M,-40.6,M,,*7F
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 509.100006 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131216.00,3334.76758,N,07303.58951,E,1,07,1.08,509.2,M,-40.6,M,,*7E
+
+Lat: 33.347675 N
+Lon: 73.035896 E
+Alt: 509.200012 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131218.00,3334.76734,N,07303.58944,E,1,07,1.08,509.4,M,-40.6,M,,*78
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 509.399994 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131220.00,3334.76722,N,07303.58935,E,1,07,1.08,509.6,M,-40.6,M,,*70
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 509.600006 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131222.00,3334.76733,N,07303.58937,E,1,07,1.08,509.6,M,-40.6,M,,*70
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 509.600006 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131224.00,3334.76726,N,07303.58937,E,1,07,1.08,509.7,M,-40.6,M,,*73
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 509.700012 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131226.00,3334.76728,N,07303.58930,E,1,07,1.08,509.8,M,-40.6,M,,*77
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 509.799988 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131228.00,3334.76721,N,07303.58921,E,1,07,1.08,510.0,M,-40.6,M,,*70
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 510.000000 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131230.00,3334.76708,N,07303.58915,E,1,07,1.08,510.2,M,-40.6,M,,*77
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 510.200012 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131232.00,3334.76698,N,07303.58912,E,1,07,1.08,510.5,M,-40.6,M,,*7D
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 510.500000 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131234.00,3334.76714,N,07303.58917,E,1,07,1.08,510.6,M,-40.6,M,,*78
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 510.600006 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131236.00,3334.76709,N,07303.58915,E,1,07,1.08,510.9,M,-40.6,M,,*7B
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 510.899994 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131238.00,3334.76741,N,07303.58925,E,1,07,1.08,510.8,M,-40.6,M,,*7B
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 510.799988 m
+Satellites: 7
+HDOP: 1.080000
+
+Extracted GPGGA string: $GPGGA,131240.00,3334.76743,N,07303.58952,E,1,07,1.08,510.8,M,-40.6,M,,*76
+
+Lat: 33.347672 N
+Lon: 73.035896 E
+Alt: 510.799988 m
+Satellites: 7
+HDOP: 1.080000

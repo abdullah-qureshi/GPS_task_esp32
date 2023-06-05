@@ -1,0 +1,105 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-917-g37d11ea04d-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Jun  5 2023 14:11:10[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a558h ( 42328) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001a580 vaddr=3ffb0000 size=02148h (  8520) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=0001c6d0 vaddr=40080000 size=03948h ( 14664) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=164c8h ( 91336) map[0m
+[0;32mI (170) esp_image: segment 4: paddr=000364f0 vaddr=40083948 size=09358h ( 37720) load[0m
+[0;32mI (192) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (192) boot: Disabling RNG early entropy source...[0m
+[0;32mI (204) cpu_start: Multicore app[0m
+[0;32mI (204) cpu_start: Pro cpu up.[0m
+[0;32mI (204) cpu_start: Starting app cpu, entry point is 0x40081104[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (222) cpu_start: Pro cpu start user code[0m
+[0;32mI (222) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (222) cpu_start: Application information:[0m
+[0;32mI (227) cpu_start: Project name:     GPS_task[0m
+[0;32mI (232) cpu_start: App version:      619d424-dirty[0m
+[0;32mI (237) cpu_start: Compile time:     Jun  5 2023 14:11:02[0m
+[0;32mI (244) cpu_start: ELF file SHA256:  ccd0112f8...[0m
+[0;32mI (249) cpu_start: ESP-IDF:          v5.2-dev-917-g37d11ea04d-dirty[0m
+[0;32mI (256) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (260) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (265) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (270) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (277) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (283) heap_init: At 3FFB29B8 len 0002D648 (181 KiB): DRAM[0m
+[0;32mI (290) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (296) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (302) heap_init: At 4008CCA0 len 00013360 (76 KiB): IRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) app_start: Starting scheduler on CPU0[0m
+[0;32mI (335) app_start: Starting scheduler on CPU1[0m
+[0;32mI (335) main_task: Started on CPU0[0m
+[0;32mI (345) main_task: Calling app_main()[0m
+[0;32mI (345) main_task: Returned from app_main()[0m
+Recv data: $GPRMC,103447.00,A,3334.76294,N,07303.58946,E,2.483,,050623,,,A*72
+$GPVTG,,T,,M,2.483,N,4.598,K,A*2E
+$GPGGA,103447.00,3334.76294,N,07303.58946,E,1,08,1.17,516.4,M,-40.6,M,,*77
+$GPGSA,A,3,18,23,15,26,16,10,29,05,,,,,1.86,1.17,1.44*0B
+$GPGSV,3,1,12,05,14,052,16,10,25,248,36,13,30,055,,15,57,080,17*7C
+$GPGSV,3,2,12,16,14,300,23,18,59,341,31,23,57,270,25,24,05,134,*7E
+$GPGSV,3,3,12,26,15,268,22,27,04,322,14,29,52,160,13,40,50,196,30*74
+$GPGLL,3334.76294,N,07303.58946,E,103447.00,A,A*64
+$GPRMC,103448.00,A,3334.76304,N,07303.58898,E,2.570,,050623,,,A*7A
+$GPVTG,,T,,M,2.570,N,4.759,K,A*2C
+$GPGGA,103448.00,3334.76304,N,07303.58898,E,1,08,1.17,516.4,M,-40.6,M,,*72
+$GPGSA,A,3,18,23,15,26,16,10,29,05,,,,,1.86,1.17,1.44*0B
+$GPGSV,3,1,12,05,14,052,15,10,25,248,35,13,30,055,,15,57,080,16*7D
+$GPGSV,3,2,12,16,14,300,24,18,59,341,31,23,57,270,25,24,05,134,*79
+$GPGSV,3,3,12,26,15,268,22,27,04,322,11,29,52,160,11,40,50,196,30*73
+$GPGLL,3334.76304,N,07303.58898,E,103448.00,A,A*61
+$GPRMC,103449.00,A,3334.76307,N,07Recv data: 303.58880,E,2.251,,050623,,,A*75
+$GPVTG,,T,,M,2.251,N,4.169,K,A*2D
+$GPGGA,103449.00,3334.76307,N,07303.58880,E,1,08,1.17,516.4,M,-40.6,M,,*79
+$GPGSA,A,3,18,23,15,26,16,10,29,05,,,,,1.85,1.17,1.44*08
+$GPGSV,3,1,12,05,14,052,15,10,25,248,37,13,30,055,,15,57,080,15*7C
+$GPGSV,3,2,12,16,14,300,24,18,59,341,32,23,57,270,26,24,05,134,*79
+$GPGSV,3,3,12,26,15,268,22,27,04,322,13,29,52,160,11,40,50,196,31*70
+$GPGLL,3334.76307,N,07303.58880,E,103449.00,A,A*6A
+$GPRMC,103450.00,A,3334.76313,N,07303.58827,E,2.425,,050623,,,A*70
+$GPVTG,,T,,M,2.425,N,4.492,K,A*29
+$GPGGA,103450.00,3334.76313,N,07303.58827,E,1,08,1.17,516.4,M,-40.6,M,,*79
+$GPGSA,A,3,18,23,15,26,16,10,29,05,,,,,1.85,1.17,1.44*08
+$GPGSV,3,1,12,05,14,052,15,10,25,248,37,13,29,054,,15,57,080,16*76
+$GPGSV,3,2,12,16,14,300,24,18,59,341,32,23,57,270,27,24,05,134,*78
+$GPGSV,3,3,12,26,15,268,22,27,04,322,15,29,52,160,11,40,50,196,31*76
+$GPGLL,3334.76313,N,07303.58827,E,103450.00,A,A*6A
+$GPRMC,103451.00,A,3334.76305,N,07303.58835,E,1.980,,050623,,,A*74
+Recv data: $GPVTG,,T,,M,1.980,N,3.666,K,A*26
+$GPGGA,103451.00,3334.76305,N,07303.58835,E,1,08,1.17,516.4,M,-40.6,M,,*7C
+$GPGSA,A,3,18,23,15,26,16,10,29,05,,,,,1.85,1.17,1.44*08
+$GPGSV,3,1,12,05,14,052,15,10,25,248,37,13,29,054,,15,57,080,15*75
+$GPGSV,3,2,12,16,14,300,24,18,59,341,32,23,57,270,27,24,05,134,*78
+$GPGSV,3,3,12,26,15,268,22,27,04,322,16,29,52,160,13,40,50,196,31*77
+$GPGLL,3334.76305,N,07303.58835,E,103451.00,A,A*6F
+$GPRMC,103452.00,A,3334.76320,N,07303.58800,E,1.872,,050623,,,A*7A
+$GPVTG,,T,,M,1.872,N,3.467,K,A*29

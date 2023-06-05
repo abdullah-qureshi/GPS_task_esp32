@@ -1,0 +1,31 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/abdullah/esp/GPS_task/build/bootloader/esp-idf/esptool_py && /home/abdullah/.espressif/python_env/idf5.2_py3.7_env/bin/python /home/abdullah/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/abdullah/esp/GPS_task/build/bootloader/bootloader.bin
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/GPS_task.c.obj
+/home/abdullah/esp/GPS_task/main/GPS_task.c: In function 'extractDataFromGPGGA':
+/home/abdullah/esp/GPS_task/main/GPS_task.c:21:26: warning: passing argument 1 of 'strtok' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   21 |     char* token = strtok(gpggaString, ",");
+      |                          ^~~~~~~~~~~
+In file included from /home/abdullah/esp/GPS_task/main/gps_nmea.h:1,
+                 from /home/abdullah/esp/GPS_task/main/GPS_task.c:13:
+/home/abdullah/.espressif/tools/xtensa-esp32-elf/esp-12.2.0_20230208/xtensa-esp32-elf/xtensa-esp32-elf/sys-include/string.h:50:18: note: expected 'char * restrict' but argument is of type 'const char *'
+   50 | char    *strtok (char *__restrict, const char *__restrict);
+      |                  ^
+/home/abdullah/esp/GPS_task/main/GPS_task.c: In function 'receive_data':
+/home/abdullah/esp/GPS_task/main/GPS_task.c:102:17: warning: unused variable 'delimiter' [-Wunused-variable]
+  102 |     const char* delimiter = "\n";
+      |                 ^~~~~~~~~
+[5/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gps_nmea.c.obj
+[6/10] Linking C static library esp-idf/main/libmain.a
+[7/10] Generating ld/sections.ld
+[8/10] Linking CXX executable GPS_task.elf
+[9/10] Generating binary image from built executable
+esptool.py v4.6.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/abdullah/esp/GPS_task/build/GPS_task.bin
+[10/10] cd /home/abdullah/esp/GPS_task/build/esp-idf/esptool_py && /home/abdullah/.espressif/python_env/idf5.2_py3.7_env/bin/python /home/abdullah/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/abdullah/esp/GPS_task/build/partition_table/partition-table.bin /home/abdullah/esp/GPS_task/build/GPS_task.bin
+GPS_task.bin binary size 0x31670 bytes. Smallest app partition is 0x100000 bytes. 0xce990 bytes (81%) free.

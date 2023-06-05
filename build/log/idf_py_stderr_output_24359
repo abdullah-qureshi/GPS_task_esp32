@@ -1,0 +1,8 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081104: call_start_cpu1 at /home/abdullah/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33mWarning: checksum mismatch between flashed and built applications. Checksum of built application is 7ee75d402514e6537ba38614f75af2d27815eb81960e95e330b0706df338c14b[0m
+[0m

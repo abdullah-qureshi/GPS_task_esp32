@@ -1,0 +1,471 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7132
+ho 0 tail 12 room 4
+load:0x40078000,len:15672
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3884
+entry 0x40080650
+[0;32mI (32) boot: ESP-IDF v5.2-dev-917-g37d11ea04d-dirty 2nd stage bootloader[0m
+[0;32mI (32) boot: compile time Jun  5 2023 14:11:10[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v1.0[0m
+[0;32mI (42) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (47) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (51) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (56) boot: Enabling RNG early entropy source...[0m
+[0;32mI (61) boot: Partition Table:[0m
+[0;32mI (65) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (72) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (80) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (87) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (95) boot: End of partition table[0m
+[0;32mI (99) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0ac80h ( 44160) map[0m
+[0;32mI (123) esp_image: segment 1: paddr=0001aca8 vaddr=3ffb0000 size=02148h (  8520) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=0001cdf8 vaddr=40080000 size=03220h ( 12832) load[0m
+[0;32mI (134) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1fe6ch (130668) map[0m
+[0;32mI (185) esp_image: segment 4: paddr=0003fe94 vaddr=40083220 size=09a80h ( 39552) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (220) cpu_start: Pro cpu up.[0m
+[0;32mI (220) cpu_start: Starting app cpu, entry point is 0x40081104[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (238) cpu_start: Pro cpu start user code[0m
+[0;32mI (238) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (238) cpu_start: Application information:[0m
+[0;32mI (242) cpu_start: Project name:     GPS_task[0m
+[0;32mI (248) cpu_start: App version:      619d424-dirty[0m
+[0;32mI (253) cpu_start: Compile time:     Jun  5 2023 14:11:02[0m
+[0;32mI (259) cpu_start: ELF file SHA256:  74a4db375...[0m
+[0;32mI (264) cpu_start: ESP-IDF:          v5.2-dev-917-g37d11ea04d-dirty[0m
+[0;32mI (271) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (276) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (281) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (286) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (293) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (299) heap_init: At 3FFB29B8 len 0002D648 (181 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (311) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (318) heap_init: At 4008CCA0 len 00013360 (76 KiB): IRAM[0m
+[0;32mI (326) spi_flash: detected chip: generic[0m
+[0;32mI (329) spi_flash: flash io: dio[0m
+[0;33mW (333) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (346) app_start: Starting scheduler on CPU0[0m
+[0;32mI (351) app_start: Starting scheduler on CPU1[0m
+[0;32mI (351) main_task: Started on CPU0[0m
+[0;32mI (361) main_task: Calling app_main()[0m
+[0;32mI (361) main_task: Returned from app_main()[0m
+
+Extracted GPGGA string: $GPGGA,145221.00,3334.76422,N,07303.60394,E,1,07,2.23,500.3,M,-40.6,M,,*7D
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.036041 E
+Alt: 500.299988 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145223.00,3334.76396,N,07303.60372,E,1,07,2.23,501.5,M,-40.6,M,,*78
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.036034 E
+Alt: 501.500000 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145225.00,3334.76371,N,07303.60341,E,1,07,2.23,502.6,M,-40.6,M,,*77
+Checksum: Valid
+Lat: 33.347637 N
+Lon: 73.036034 E
+Alt: 502.600006 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145227.00,3334.76343,N,07303.60311,E,1,07,2.23,503.9,M,-40.6,M,,*7F
+Checksum: Valid
+Lat: 33.347633 N
+Lon: 73.036034 E
+Alt: 503.899994 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145229.00,3334.76313,N,07303.60277,E,1,07,2.23,505.2,M,-40.6,M,,*78
+Checksum: Valid
+Lat: 33.347633 N
+Lon: 73.036026 E
+Alt: 505.200012 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145231.00,3334.76289,N,07303.60245,E,1,07,2.23,506.3,M,-40.6,M,,*70
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.036026 E
+Alt: 506.299988 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145233.00,3334.76268,N,07303.60216,E,1,07,2.23,507.5,M,-40.6,M,,*7C
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.036018 E
+Alt: 507.500000 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145235.00,3334.76248,N,07303.60174,E,1,07,2.23,508.6,M,-40.6,M,,*73
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.036018 E
+Alt: 508.600006 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145237.00,3334.76225,N,07303.60143,E,1,07,2.23,509.7,M,-40.6,M,,*7E
+Checksum: Valid
+Lat: 33.347622 N
+Lon: 73.036018 E
+Alt: 509.700012 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145239.00,3334.76203,N,07303.60115,E,1,07,2.23,510.7,M,-40.6,M,,*7F
+Checksum: Valid
+Lat: 33.347618 N
+Lon: 73.036011 E
+Alt: 510.700012 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145241.00,3334.76190,N,07303.60076,E,1,07,2.23,511.5,M,-40.6,M,,*7E
+Checksum: Valid
+Lat: 33.347618 N
+Lon: 73.036003 E
+Alt: 511.500000 m
+Satellites: 7
+HDOP: 2.230000
+
+Extracted GPGGA string: $GPGGA,145243.00,3334.76173,N,07303.60044,E,1,07,2.24,512.4,M,-40.6,M,,*75
+Checksum: Valid
+Lat: 33.347618 N
+Lon: 73.036003 E
+Alt: 512.400024 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145245.00,3334.76158,N,07303.60021,E,1,07,2.24,513.3,M,-40.6,M,,*7F
+Checksum: Valid
+Lat: 33.347614 N
+Lon: 73.036003 E
+Alt: 513.299988 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145247.00,3334.76138,N,07303.60014,E,1,07,2.24,514.1,M,-40.6,M,,*78
+Checksum: Valid
+Lat: 33.347614 N
+Lon: 73.036003 E
+Alt: 514.099976 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145249.00,3334.76162,N,07303.59985,E,1,06,2.61,514.6,M,-40.6,M,,*75
+Checksum: Valid
+Lat: 33.347618 N
+Lon: 73.035995 E
+Alt: 514.599976 m
+Satellites: 6
+HDOP: 2.610000
+
+Extracted GPGGA string: $GPGGA,145251.00,3334.76142,N,07303.59976,E,1,06,2.61,515.0,M,-40.6,M,,*75
+Checksum: Valid
+Lat: 33.347614 N
+Lon: 73.035995 E
+Alt: 515.000000 m
+Satellites: 6
+HDOP: 2.610000
+
+Extracted GPGGA string: $GPGGA,145253.00,3334.76169,N,07303.59893,E,1,07,2.24,515.5,M,-40.6,M,,*71
+Checksum: Valid
+Lat: 33.347618 N
+Lon: 73.035988 E
+Alt: 515.500000 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145255.00,3334.76176,N,07303.59846,E,1,07,2.24,515.9,M,-40.6,M,,*7D
+Checksum: Valid
+Lat: 33.347618 N
+Lon: 73.035988 E
+Alt: 515.900024 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145257.00,3334.76177,N,07303.59783,E,1,07,2.24,516.3,M,-40.6,M,,*71
+Checksum: Valid
+Lat: 33.347618 N
+Lon: 73.035980 E
+Alt: 516.299988 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145259.00,3334.76140,N,07303.59778,E,1,06,2.61,516.7,M,-40.6,M,,*7B
+Checksum: Valid
+Lat: 33.347614 N
+Lon: 73.035980 E
+Alt: 516.700012 m
+Satellites: 6
+HDOP: 2.610000
+
+Extracted GPGGA string: $GPGGA,145301.00,3334.76187,N,07303.59715,E,1,06,2.61,517.0,M,-40.6,M,,*71
+Checksum: Valid
+Lat: 33.347618 N
+Lon: 73.035973 E
+Alt: 517.000000 m
+Satellites: 6
+HDOP: 2.610000
+
+Extracted GPGGA string: $GPGGA,145303.00,3334.76211,N,07303.59666,E,1,06,2.61,517.3,M,-40.6,M,,*79
+Checksum: Valid
+Lat: 33.347622 N
+Lon: 73.035965 E
+Alt: 517.299988 m
+Satellites: 6
+HDOP: 2.610000
+
+Extracted GPGGA string: $GPGGA,145305.00,3334.76237,N,07303.59641,E,1,05,1.97,517.3,M,-40.6,M,,*77
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035965 E
+Alt: 517.299988 m
+Satellites: 5
+HDOP: 1.970000
+
+Extracted GPGGA string: $GPGGA,145307.00,3334.76341,N,07303.59475,E,1,05,1.97,517.3,M,-40.6,M,,*70
+Checksum: Valid
+Lat: 33.347633 N
+Lon: 73.035950 E
+Alt: 517.299988 m
+Satellites: 5
+HDOP: 1.970000
+
+Extracted GPGGA string: $GPGGA,145309.00,3334.76287,N,07303.59546,E,1,06,2.61,517.4,M,-40.6,M,,*7A
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.035957 E
+Alt: 517.400024 m
+Satellites: 6
+HDOP: 2.610000
+
+Extracted GPGGA string: $GPGGA,145311.00,3334.76274,N,07303.59539,E,1,07,2.24,517.5,M,-40.6,M,,*76
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035950 E
+Alt: 517.500000 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145313.00,3334.76283,N,07303.59530,E,1,07,2.24,517.6,M,-40.6,M,,*76
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.035950 E
+Alt: 517.599976 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145315.00,3334.76285,N,07303.59538,E,1,07,2.24,517.7,M,-40.6,M,,*7F
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.035950 E
+Alt: 517.700012 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145317.00,3334.76274,N,07303.59558,E,1,07,2.24,517.9,M,-40.6,M,,*7B
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035957 E
+Alt: 517.900024 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145319.00,3334.76282,N,07303.59520,E,1,07,2.24,518.1,M,-40.6,M,,*74
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.035950 E
+Alt: 518.099976 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145321.00,3334.76284,N,07303.59494,E,1,07,2.24,518.3,M,-40.6,M,,*75
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.035950 E
+Alt: 518.299988 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145324.00,3334.76265,N,07303.59499,E,1,07,2.24,518.6,M,-40.6,M,,*77
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035950 E
+Alt: 518.599976 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145326.00,3334.76259,N,07303.59502,E,1,07,2.24,518.8,M,-40.6,M,,*77
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035950 E
+Alt: 518.799988 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145328.00,3334.76263,N,07303.59482,E,1,07,2.24,518.9,M,-40.6,M,,*78
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035950 E
+Alt: 518.900024 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145330.00,3334.76270,N,07303.59460,E,1,07,2.24,519.0,M,-40.6,M,,*77
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035950 E
+Alt: 519.000000 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145332.00,3334.76273,N,07303.59439,E,1,07,2.24,519.2,M,-40.6,M,,*78
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035942 E
+Alt: 519.200012 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145334.00,3334.76276,N,07303.59418,E,1,07,2.24,519.3,M,-40.6,M,,*79
+Checksum: Valid
+Lat: 33.347626 N
+Lon: 73.035942 E
+Alt: 519.299988 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145336.00,3334.76286,N,07303.59387,E,1,07,2.24,519.4,M,-40.6,M,,*72
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.035934 E
+Alt: 519.400024 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145338.00,3334.76291,N,07303.59370,E,1,07,2.24,519.6,M,-40.6,M,,*70
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.035934 E
+Alt: 519.599976 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145339.00,3334.76295,N,07303.59361,E,1,07,2.24,519.6,M,-40.6,M,,*75
+Checksum: Valid
+Lat: 33.347630 N
+Lon: 73.035934 E
+Alt: 519.599976 m
+Satellites: 7
+HDOP: 2.240000
+
+Extracted GPGGA string: $GPGGA,145338.00,3334.76320,N,07303.59297,E,1,07,2.25,519.7,M,-40.6,M,,*73
+Checksum: Valid
+Lat: 33.347633 N
+Lon: 73.035927 E
+Alt: 519.700012 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145340.00,3334.76341,N,07303.59253,E,1,07,2.25,519.8,M,-40.6,M,,*7C
+Checksum: Valid
+Lat: 33.347633 N
+Lon: 73.035927 E
+Alt: 519.799988 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145342.00,3334.76364,N,07303.59202,E,1,07,2.25,519.9,M,-40.6,M,,*7C
+Checksum: Valid
+Lat: 33.347637 N
+Lon: 73.035919 E
+Alt: 519.900024 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145344.00,3334.76380,N,07303.59158,E,1,07,2.25,520.0,M,-40.6,M,,*7F
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.035919 E
+Alt: 520.000000 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145346.00,3334.76388,N,07303.59137,E,1,07,2.25,520.0,M,-40.6,M,,*7C
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.035912 E
+Alt: 520.000000 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145348.00,3334.76398,N,07303.59109,E,1,07,2.25,520.1,M,-40.6,M,,*7F
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.035912 E
+Alt: 520.099976 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145350.00,3334.76402,N,07303.59093,E,1,07,2.25,520.2,M,-40.6,M,,*73
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.035912 E
+Alt: 520.200012 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145352.00,3334.76409,N,07303.59079,E,1,07,2.25,520.2,M,-40.6,M,,*7E
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.035912 E
+Alt: 520.200012 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145354.00,3334.76415,N,07303.59061,E,1,07,2.25,520.1,M,-40.6,M,,*7F
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.035912 E
+Alt: 520.099976 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145356.00,3334.76417,N,07303.59040,E,1,07,2.25,520.2,M,-40.6,M,,*7F
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.035904 E
+Alt: 520.200012 m
+Satellites: 7
+HDOP: 2.250000
+
+Extracted GPGGA string: $GPGGA,145358.00,3334.76422,N,07303.59028,E,1,07,2.25,520.2,M,-40.6,M,,*79
+Checksum: Valid
+Lat: 33.347641 N
+Lon: 73.035904 E
+Alt: 520.200012 m
+Satellites: 7
+HDOP: 2.250000

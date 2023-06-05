@@ -1,0 +1,20 @@
+[1/12] Linking C static library esp-idf/spiffs/libspiffs.a
+[2/12] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[3/12] Performing build step for 'bootloader'
+[1/1] cd /home/abdullah/esp/GPS_task/build/bootloader/esp-idf/esptool_py && /home/abdullah/.espressif/python_env/idf5.2_py3.7_env/bin/python /home/abdullah/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/abdullah/esp/GPS_task/build/bootloader/bootloader.bin
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[4/12] No install step for 'bootloader'
+[5/12] Completed 'bootloader'
+[6/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/GPS_task.c.obj
+[7/12] Linking C static library esp-idf/main/libmain.a
+[8/12] Generating ld/sections.ld
+[9/12] Building C object CMakeFiles/GPS_task.elf.dir/project_elf_src_esp32.c.obj
+[10/12] Linking CXX executable GPS_task.elf
+[11/12] Generating binary image from built executable
+esptool.py v4.6.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/abdullah/esp/GPS_task/build/GPS_task.bin
+[12/12] cd /home/abdullah/esp/GPS_task/build/esp-idf/esptool_py && /home/abdullah/.espressif/python_env/idf5.2_py3.7_env/bin/python /home/abdullah/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/abdullah/esp/GPS_task/build/partition_table/partition-table.bin /home/abdullah/esp/GPS_task/build/GPS_task.bin
+GPS_task.bin binary size 0x2f870 bytes. Smallest app partition is 0x100000 bytes. 0xd0790 bytes (81%) free.
