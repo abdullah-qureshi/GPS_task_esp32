@@ -14,7 +14,7 @@ Display the Values of:
 - Number of Satellite/HDOP
 
 <!-- Getting Started -->
-## 	:toolbox: Getting Started
+## 	Getting Started
 
 I used a GPS Neo-6m with ESP-32 in order to receive the GPS values.
 
