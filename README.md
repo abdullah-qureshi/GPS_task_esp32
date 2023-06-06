@@ -39,6 +39,7 @@ Make the connections according to the table and schematic below.
 
 ### Hardware
 
+![alt text](https://github.com/abdullah-qureshi/GPS_task_esp32/blob/master/img/gps_hardware.jpg "Hardware" )
 
 ## Running
 
@@ -49,6 +50,8 @@ idf.py build
 idf.py - PORT flash monitor
 ...
 ```
+
+![alt text](https://github.com/abdullah-qureshi/GPS_task_esp32/blob/master/img/terminal_display.png "Terminal Output" )
 
 
 
