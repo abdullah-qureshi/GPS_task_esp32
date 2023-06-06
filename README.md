@@ -35,7 +35,7 @@ Make the connections according to the table and schematic below.
 | 3V3    | VCC  |
 | GND    | GND  |
 
-![alt text](https://github.com/abdullah-qureshi/GPS_task_esp32/blob/master/img/schematic_esp_neo6m "ESP32 GPS NEO 6M V2" )
+![alt text](https://github.com/abdullah-qureshi/GPS_task_esp32/blob/master/img/schematic_esp_neo6m.png "ESP32 GPS NEO 6M V2" )
 
 ### Hardware
 
