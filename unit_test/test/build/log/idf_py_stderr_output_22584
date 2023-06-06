@@ -1,0 +1,113 @@
+[0;33m--- idf_monitor on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081004: call_start_cpu1 at /home/abdullah/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d0ebd: test_func_6 at /home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c:21
+[0m
+[0;33m0x400d58da: unity_default_test_run at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:70
+[0m
+[0;33m0x400d5a19: unity_run_single_test at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:117
+[0m
+[0;33m0x400d5a86: unity_run_all_tests at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:176 (discriminator 3)
+[0m
+[0;33m0x400d5bdf: app_main at /home/abdullah/esp/GPS_task/unit_test/test/main/example_unit_test_test.c:17
+[0m
+[0;33m0x400ec955: main_task at /home/abdullah/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087aa1: vPortTaskWrapper at /home/abdullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081004: call_start_cpu1 at /home/abdullah/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d0ebd: test_func_6 at /home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c:21
+[0m
+[0;33m0x400d58da: unity_default_test_run at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:70
+[0m
+[0;33m0x400d5a19: unity_run_single_test at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:117
+[0m
+[0;33m0x400d5a86: unity_run_all_tests at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:176 (discriminator 3)
+[0m
+[0;33m0x400d5bdf: app_main at /home/abdullah/esp/GPS_task/unit_test/test/main/example_unit_test_test.c:17
+[0m
+[0;33m0x400ec955: main_task at /home/abdullah/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087aa1: vPortTaskWrapper at /home/abdullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081004: call_start_cpu1 at /home/abdullah/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d0ebd: test_func_6 at /home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c:21
+[0m
+[0;33m0x400d58da: unity_default_test_run at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:70
+[0m
+[0;33m0x400d5a19: unity_run_single_test at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:117
+[0m
+[0;33m0x400d5a86: unity_run_all_tests at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:176 (discriminator 3)
+[0m
+[0;33m0x400d5bdf: app_main at /home/abdullah/esp/GPS_task/unit_test/test/main/example_unit_test_test.c:17
+[0m
+[0;33m0x400ec955: main_task at /home/abdullah/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087aa1: vPortTaskWrapper at /home/abdullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081004: call_start_cpu1 at /home/abdullah/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d0ebd: test_func_6 at /home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c:21
+[0m
+[0;33m0x400d58da: unity_default_test_run at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:70
+[0m
+[0;33m0x400d5a19: unity_run_single_test at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:117
+[0m
+[0;33m0x400d5a86: unity_run_all_tests at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:176 (discriminator 3)
+[0m
+[0;33m0x400d5bdf: app_main at /home/abdullah/esp/GPS_task/unit_test/test/main/example_unit_test_test.c:17
+[0m
+[0;33m0x400ec955: main_task at /home/abdullah/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087aa1: vPortTaskWrapper at /home/abdullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081004: call_start_cpu1 at /home/abdullah/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d0ebd: test_func_6 at /home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c:21
+[0m
+[0;33m0x400d58da: unity_default_test_run at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:70
+[0m
+[0;33m0x400d5a19: unity_run_single_test at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:117
+[0m
+[0;33m0x400d5a86: unity_run_all_tests at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:176 (discriminator 3)
+[0m
+[0;33m0x400d5bdf: app_main at /home/abdullah/esp/GPS_task/unit_test/test/main/example_unit_test_test.c:17
+[0m
+[0;33m0x400ec955: main_task at /home/abdullah/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087aa1: vPortTaskWrapper at /home/abdullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40081004: call_start_cpu1 at /home/abdullah/esp/esp-idf/components/esp_system/port/cpu_start.c:154
+[0m
+[0;33m0x400d0ebd: test_func_6 at /home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c:21
+[0m
+[0;33m0x400d58da: unity_default_test_run at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:70
+[0m
+[0;33m0x400d5a19: unity_run_single_test at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:117
+[0m
+[0;33m0x400d5a86: unity_run_all_tests at /home/abdullah/esp/esp-idf/components/unity/unity_runner.c:176 (discriminator 3)
+[0m
+[0;33m0x400d5bdf: app_main at /home/abdullah/esp/GPS_task/unit_test/test/main/example_unit_test_test.c:17
+[0m
+[0;33m0x400ec955: main_task at /home/abdullah/esp/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m0x40087aa1: vPortTaskWrapper at /home/abdullah/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

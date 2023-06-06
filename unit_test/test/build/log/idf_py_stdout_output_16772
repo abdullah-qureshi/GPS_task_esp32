@@ -1,0 +1,36 @@
+[1/11] Building C object esp-idf/testable/CMakeFiles/__idf_testable.dir/mean.c.obj
+In file included from /home/abdullah/esp/GPS_task/unit_test/components/testable/mean.c:11:
+/home/abdullah/esp/GPS_task/unit_test/components/testable/include/testable.h: In function 'parse_gps_data':
+/home/abdullah/esp/GPS_task/unit_test/components/testable/include/testable.h:41:17: warning: unused variable 'delimiter' [-Wunused-variable]
+   41 |     const char* delimiter = "\n";
+      |                 ^~~~~~~~~
+[2/11] Linking C static library esp-idf/testable/libtestable.a
+[3/11] Performing build step for 'bootloader'
+[1/1] cd /home/abdullah/esp/GPS_task/unit_test/test/build/bootloader/esp-idf/esptool_py && /home/abdullah/.espressif/python_env/idf5.2_py3.7_env/bin/python /home/abdullah/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/abdullah/esp/GPS_task/unit_test/test/build/bootloader/bootloader.bin
+Bootloader binary size 0x68a0 bytes. 0x760 bytes (7%) free.
+[4/11] No install step for 'bootloader'
+[5/11] Building C object esp-idf/testable_test/CMakeFiles/__testable_test.dir/test_nmea.c.obj
+In file included from /home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c:2:
+/home/abdullah/esp/GPS_task/unit_test/components/testable/include/testable.h: In function 'parse_gps_data':
+/home/abdullah/esp/GPS_task/unit_test/components/testable/include/testable.h:41:17: warning: unused variable 'delimiter' [-Wunused-variable]
+   41 |     const char* delimiter = "\n";
+      |                 ^~~~~~~~~
+/home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c: In function 'test_func_6':
+/home/abdullah/esp/GPS_task/unit_test/components/testable/test/test_nmea.c:12:20: warning: passing argument 1 of 'parse_gps_data' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   12 |     parse_gps_data(nmea_str, &gps_data);
+      |                    ^~~~~~~~
+/home/abdullah/esp/GPS_task/unit_test/components/testable/include/testable.h:38:28: note: expected 'char *' but argument is of type 'const char *'
+   38 | void parse_gps_data (char* nmea_str, GPS* gps_data)
+      |                      ~~~~~~^~~~~~~~
+[6/11] Linking C static library esp-idf/testable_test/libtest.a
+[7/11] Completed 'bootloader'
+[8/11] Generating ld/sections.ld
+[9/11] Linking CXX executable unit_test_test.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.6.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/abdullah/esp/GPS_task/unit_test/test/build/unit_test_test.bin
+[11/11] cd /home/abdullah/esp/GPS_task/unit_test/test/build/esp-idf/esptool_py && /home/abdullah/.espressif/python_env/idf5.2_py3.7_env/bin/python /home/abdullah/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/abdullah/esp/GPS_task/unit_test/test/build/partition_table/partition-table.bin /home/abdullah/esp/GPS_task/unit_test/test/build/unit_test_test.bin
+unit_test_test.bin binary size 0x34480 bytes. Smallest app partition is 0x100000 bytes. 0xcbb80 bytes (80%) free.

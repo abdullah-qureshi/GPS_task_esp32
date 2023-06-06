@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "GPS_task",
-    "project_version":    "619d424-dirty",
+    "project_version":    "31bee7b-dirty",
     "project_path":       "/home/abdullah/esp/GPS_task",
     "idf_path":           "/home/abdullah/esp/esp-idf",
     "build_dir":          "/home/abdullah/esp/GPS_task/build",
